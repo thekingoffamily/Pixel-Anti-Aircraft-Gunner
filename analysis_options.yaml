@@ -1,0 +1,17 @@
+# Без внешних include-пакетов, чтобы `flutter analyze` работал сразу после клонирования.
+linter:
+  rules:
+    - always_declare_return_types
+    - avoid_empty_else
+    - avoid_relative_lib_imports
+    - avoid_unnecessary_containers
+    - prefer_const_constructors
+    - prefer_final_locals
+    - prefer_single_quotes
+    - unnecessary_this
+    - use_super_parameters
+
+analyzer:
+  errors:
+    # Эти правила не должны блокировать сборку.
+    prefer_const_constructors: info
